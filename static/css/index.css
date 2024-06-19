@@ -1,0 +1,112 @@
+.heading
+{
+    font-family: Cambria;
+    align-items: center;
+}
+
+.login-box
+{
+    width:fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+tr
+{
+    font-family: Cambria;
+    font-size: larger;
+}
+td
+{
+    padding: 10px;
+}
+.empty
+{
+    width:10px;
+}
+#username
+{
+    font-family: Cambria;
+    font-size: large;
+    padding:5px;
+}
+
+#level
+{
+    font-family: Cambria;
+    font-size: large;
+}
+a
+{
+    all: unset;
+}
+.play-button
+{
+    font-family: Cambria;
+    font-size: large;
+    padding: 5px 20px 5px 20px;
+    margin-top: 20px;
+    background-color: #76FF03;
+}
+.play-button:hover
+{
+    background-color: #CCFF90;
+}
+.content
+{
+    border: 5px solid black;
+    background-color: #ebeaea;
+    padding: 50px;
+    width: fit-content;
+    margin-top: 150px;
+}
+body
+{
+    text-align: center;
+}
+select
+{
+    padding: 5px;
+}
+
+@media screen and (max-width:450px) {
+    
+    .empty
+    {
+        width: 0px;
+    }
+    tr
+    {
+        font-family: Cambria;
+        font-size: large;
+    }
+    td
+    {
+        padding: 5px;
+    }
+    body
+    {
+        text-align: center;
+    }
+    .content
+    {
+        padding: 10px; 
+    }
+    #username
+    {
+        font-family: Cambria;
+        font-size: medium;
+        padding:5px;
+        width: 150px;
+    }
+
+    #level
+    {
+        font-family: Cambria;
+        font-size:medium;
+    }
+    .heading
+    {
+        font-size: x-large;
+    }
+}

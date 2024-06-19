@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Game</title>
+    <link rel="stylesheet" href="/static/css/game.css">
+</head>
+<body>
+    <div class="container">
+        <center>
+            <h1 class="heading"><b>Number Game</b></h1>
+        </center>
+        <div class="top">
+            <div class="score-board">
+                <h3 id="score">Score: 0</h3>
+                <h3 id="lev">Level: {{lev}}</h3>
+            </div>
+            <div class="navigation">
+                <form action="/help"><button type="submit" class="nav-button">Help</button></form>
+                
+            </div>
+        </div>
+        <div class="content">
+            <div class="values">
+                <h3 class="element" id="random">Computer: 0</h3>
+                <h3 class="element" id="user">User: 0</h3>
+            </div>
+            <h3 id="chance">Chance : 3</h3>
+            <div class="box">
+                <center>
+                    <input id="number-box" type="number">
+                </center>
+                <center>
+                    <input onclick="submit()" class="submit-button" value="Submit" type="submit">
+                </center>
+            </div>
+            <div class="bottom">
+                <form action="/leaderboard">
+                    <button type="submit" class="leader-board">Leader Board</button>
+                </form>
+                
+                <button onclick="submit_score(0)" class="exit">Exit</button>
+            </div>
+        </div>
+    </div>
+
+    <form id="saveform" action="/submit_score" method="post" style="display: none;">
+        <input id="finalScore" name="score" type="hidden">
+    </form>
+    <script src="/static/js/game.js"></script>
+</body>
+</html>

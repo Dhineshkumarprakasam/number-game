@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #343a40;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #6c757d;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .button-container {
+            text-align: center;
+            display: flex;
+            flex-direction:row;
+        }
+        button {
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .easy {
+            background-color: #28a745;
+            color: white;
+        }
+        .medium {
+            background-color: #ffc107;
+            color: white;
+        }
+        .difficult {
+            background-color: #dc3545;
+            color: white;
+        }
+        button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        @media screen and (max-width:430px) {
+            .button-container
+            {
+                flex-direction: column;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Leaderboard</h1>
+    <p>Select Level to View Leaderboard of Each Level</p>
+    <div class="button-container">
+        <form action="/easy">
+            <button type="submit" class="easy">Easy</button>
+        </form>
+
+        <form action="/medium">
+            <button type="submit" class="medium">Medium</button>
+        </form>
+        
+        <form action="/difficult">
+            <button type="submit" class="difficult">Difficult</button>
+        </form>
+        
+    </div>
+
+    
+</body>
+</html>

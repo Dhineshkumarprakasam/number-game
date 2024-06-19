@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .rules {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        .rules ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .rules li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Number Game</h1>
+        <div class="rules">
+            <p>Welcome to the number guessing game!</p>
+            <p>Rules:</p>
+            <ul>
+                <li>Enter a number between 1 to 9 in Easy level, 1 to 5 in Medium level, and 1 to 3 in Difficult level.</li>
+                <li>The computer will generate a number within the respective level's range.</li>
+                <li>If your number matches the computer's number, you lose a chance.</li>
+                <li>You start with 3 chances. If chances run out (chance = 0), you lose the game.</li>
+                <li>If your number does not match the computer's, the number you entered will be added to your score.</li>
+            </ul>
+        </div>
+        <a href="javascript:history.go(-1)" class="button">Start Game</a>
+    </div>
+</body>
+</html>

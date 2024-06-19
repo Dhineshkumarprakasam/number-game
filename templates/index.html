@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="\static\css\index.css" />
+  </head>
+  <body>
+    <center>
+      <h1 class="heading">Number Game by Dhinesh</h1>
+    </center>
+
+    <center>
+      <div class="content">
+        <form action="/game" method="post">
+          <div class="login-box">
+            <table>
+              <tr>
+                <td>Username</td>
+                <td class="empty"></td>
+                <td><input name="username" id="username" type="text" /></td>
+              </tr>
+
+              <tr>
+                <td>Level</td>
+                <td class="empty"></td>
+                <td>
+                  <select name="lev" id="lev">
+                    <option value="Easy level">Easy level</option>
+                    <option value="Medium level">Medium level</option>
+                    <option value="Difficult level">Difficult level</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <tr>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td>
+              <center><input value="Play" class="play-button" type="submit"></center>
+            </td>
+          </tr>
+        </form>
+      </div>
+    </center>
+
+
+  </body>
+</html>
